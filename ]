@@ -1,0 +1,36 @@
+body {
+	background: url("../assets/smart-city.jpg") no-repeat center center fixed;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	background-size: cover;
+	-o-background-size: cover;
+	padding-top: 65px;
+}
+
+.main-title {
+	height: 100vh;
+	color: white;
+	text-align: left;
+	text-shadow: 0.2vw 0.2vw 0.2vw black;
+	font-size: 10vw;
+	font-style: italic;
+	padding: 5vw;
+}
+
+.pulse {
+	transform-origin: center center;
+	animation: pulse-animation ease-in-out 1s infinite;
+}
+
+@keyframes pulse-animation
+{
+	0% {
+		transform: translate( 0, 0 );
+	}
+	50% {
+		transform: translate( 0, -1vh );
+	}
+	100% {
+		transform: translate( 0, 0 );
+	}
+}
