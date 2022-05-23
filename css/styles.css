@@ -1,6 +1,11 @@
-@import url('https://fonts.googleapis.com/css2?family=Bungee+Hairline&family=Libre+Barcode+39+Extended+Text&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Barlow&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Akshar&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Libre+Barcode+128&family=Oxanium&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans&display=swap');
 
-body {
+html, body {
+	min-width: 100vw;
+	min-height: 100vh;
 	background: url("../assets/smart-city.jpg") no-repeat center center fixed;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
@@ -8,37 +13,65 @@ body {
 	-o-background-size: cover;
 }
 
-.main-title {
-	font-family: 'Libre Barcode 39 Extended Text', cursive;
-	height: 100vh;
-	color: white;
-	text-align: center;
-	font-size: 15vh;
+html * {
+	font-family: 'Barlow', sans-serif;
 }
 
-.main-title p {
-	margin-top: 15vh;
+nav {
+	font-size: 1.25rem;
+}
+
+#navbrand {
+	font-size: 1.75rem;
+	font-weight: bold;
+}
+
+.main-title {
+	min-height: 100vh;
+	color: white;
+	text-align: center;
+	font-size: 7.5vw;
+}
+
+#barcode {
+	font-family: 'Libre Barcode 128', cursive;
+}
+
+#title {
+	font-weight: 100;
 }
 
 .main-title img {
-	width: auto;
-	height: 5vh;
+	width: 2.5vw;
+	height: auto;
 }
 
 .pulse {
 	animation: pulse-animation ease-in-out 1s infinite;
 }
 
+.flex-container {
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-between;
+}
+
+.flex-item {
+	width: 20vw;
+	padding: 5px;
+	margin-top: 10px;
+	font-weight: bold;
+}
 
 @keyframes pulse-animation
 {
-	0% {
-		transform: translate( 0, 0 );
-	}
-	50% {
-		transform: translate( 0, -1vh );
-	}
-	100% {
-		transform: translate( 0, 0 );
-	}
+0% {
+	transform: translate( 0, 0 );
+}
+50% {
+	transform: translate( 0, -1vh );
+}
+100% {
+	transform: translate( 0, 0 );
+}
 }
